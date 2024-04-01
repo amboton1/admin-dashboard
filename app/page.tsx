@@ -11,7 +11,7 @@ type Props = {
   };
 };
 
-export default async function Home({ searchParams }: Props) {
+const Home = async({ searchParams }: Props) => {
   const session = await getServerSession(authOptions);
   const query = searchParams.q;
   const users = await prisma.user.findMany({
@@ -42,3 +42,5 @@ export default async function Home({ searchParams }: Props) {
     </main>
   );
 }
+
+export default Home;

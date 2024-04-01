@@ -8,7 +8,7 @@ type Props = {
   query?: string;
 };
 
-export default function Search({ query }: Props) {
+const Search = ({ query }: Props) => {
   const router = useRouter();
   const pathname = usePathname();
   const [isPending, startTransition] = useTransition();
@@ -55,3 +55,5 @@ export default function Search({ query }: Props) {
     </div>
   );
 }
+
+export default Search;

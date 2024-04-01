@@ -19,7 +19,7 @@ const data = [
   },
 ];
 
-export default function Analytics() {
+const Analytics = () => {
   return (
     <main className="p-4 md:p-10 mx-auto max-w-7xl">
       <Grid numItemsSm={2} numItemsLg={3} className="gap-6">
@@ -52,3 +52,5 @@ export default function Analytics() {
     </main>
   );
 }
+
+export default Analytics;

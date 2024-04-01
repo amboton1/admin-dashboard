@@ -12,7 +12,7 @@ type Props = {
   users: User[];
 };
 
-export default function UsersTable({ users }: Props) {
+const UsersTable = ({ users }: Props) => {
   return (
     <Table>
       <TableHead>
@@ -36,3 +36,5 @@ export default function UsersTable({ users }: Props) {
     </Table>
   );
 }
+
+export default UsersTable;
